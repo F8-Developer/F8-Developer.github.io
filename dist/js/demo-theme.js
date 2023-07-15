@@ -13,6 +13,8 @@
 
 	var themeStorageKey = "tablerTheme";
 	var defaultTheme = "dark";
+	console.log("=========");
+	console.log("asdasdasdasd");
 	var selectedTheme;
 	var params = new Proxy(new URLSearchParams(window.location.search), {
 	  get: function get(searchParams, prop) {
