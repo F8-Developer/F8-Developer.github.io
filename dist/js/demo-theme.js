@@ -1,21 +1,10 @@
-/*!
-* Tabler v1.0.0-beta19 (https://tabler.io)
-* @version 1.0.0-beta19
-* @link https://tabler.io
-* Copyright 2018-2023 The Tabler Authors
-* Copyright 2018-2023 codecalm.net Paweł Kuna
-* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
-*/
 (function (factory) {
 	typeof define === 'function' && define.amd ? define(factory) :
 	factory();
 })((function () { 'use strict';
-
 	var themeStorageKey = "tablerTheme";
 	var defaultTheme = "dark";
-	console.log("=========");
-	console.log("asdasdasdasd");
-	var selectedTheme;
+	var selectedTheme = "dark";
 	var params = new Proxy(new URLSearchParams(window.location.search), {
 	  get: function get(searchParams, prop) {
 	    return searchParams.get(prop);
